@@ -33,5 +33,7 @@ The compressed format of the database is delimited by < and > characters as foll
 <<Post ID<>Answer Id><Body>>
 
 For reference, the original StackOverflow database is 4.6 GB. 
+It's compressed by only keeping the accepted answer for each question, and cutting out a lot of the XML. 
+Searching for all answers to a question takes 30 minutes of search time per question, which is too slow. 
 
 Using dd instead of readBlock.py is possible, but post reading time increases to 30 seconds. 
